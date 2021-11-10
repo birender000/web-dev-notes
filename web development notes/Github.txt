@@ -1,0 +1,23 @@
+Signup 
+
+for adding repository 
+---------------------
+
++ -> repository name -> initialize with read me
+
+upload files -> drag your file and drop to github -> Commit changes.
+
+-> type -> Commit directly to master branch.
+
+
+Setting
+--------
+
+Github pages = is designed to host your personal,organizational or 
+		project pages from a github Repository.
+
+
+source -> master branch -> save.
+
+then it will show ------->Your site is ready 
+

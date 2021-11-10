@@ -1,0 +1,155 @@
+a{
+    color: #11999E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+}
+
+h1{
+    color: #11999E;
+    font-family: 'Special Elite', cursive;
+    font-size: 2.2rem;
+    margin-top: 25px;
+    
+}
+
+h2{
+    color: #11999E;
+    font-family: 'Special Elite', cursive;
+   
+}
+h3{
+    color: #66BFBF;
+    font-family: 'Special Elite', cursive;
+}
+
+
+p{
+    font-family: monospace;
+    font-size: large;
+}
+
+hr{
+    border-style: dotted none none;
+    width: 5%;
+    border-width: 5px;
+    border-color: grey;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+button{
+    border: 1px ;
+    background-color: #66BFBF;
+    border-radius: 8px;
+    padding: 10px 15px; 
+    margin-top: 50px;
+}
+/* ===================== classes =====================*/
+
+
+.pro{
+    font-weight: normal;
+
+}
+
+.top-cloud{
+    position: absolute;
+    top: 50px;
+    right: 350px; 
+}
+
+.bottom-cloud{
+    bottom: 300px;
+    position: absolute;
+    left: 350px;
+    
+}
+
+/* .bottom-container{
+
+} */
+
+/* .middle-container{
+
+} */
+
+.top-container{
+    background-color: #EAF6F6;
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
+    line-height: 1;
+}
+
+.profile{
+    width: 50%;
+    margin: 50px auto 50px auto;
+    line-height: 1.5em;
+
+}
+
+.skill-row{
+    width: 50%;
+    margin: 50px auto 150px auto;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+
+
+.my-pic{
+    margin-top: 100px;
+    background-color: gray;
+    border-radius: 10rem;
+    height: 160px;
+    width: 160px;
+}
+
+.computer-img{
+    width: 25%;
+    float: left;
+    margin-right: 50px;
+    height: 160px;
+    width: 160px;
+    border-radius: 5em;
+}
+
+.hot-img{
+    width: 25%;
+    float: right;
+    margin-left: 20px;
+  height: 160px;
+    width: 160px;
+}
+
+.contact-me{
+    width: 50%;
+    margin: 50px auto 100px auto;
+    line-height: 1.5em;
+}
+
+.bottom-container{
+    background-color: #66BFBF;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    line-height: 3em;
+}
+
+.footer-link{
+    color: #11999E;
+    margin: 20px 20px 20px 20px;
+}
+
+.copyright{
+    color: #EAF6F6;
+}
+
+.btn{
+    color: #EAF6F6;
+}
