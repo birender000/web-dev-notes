@@ -1,0 +1,41 @@
+
+
+
+======================================================== BootStrap ==========================================
+
+bootstrap is a Frontend library. 
+
+1. It is opensource and free available in github [second most famous repository in github]
+2. Responsive : bootstrap make easy to make a website adaptive for different client[mobile, desktop etc.]
+3. It provide pre-styled elements.
+
+Interesting facts:
+--------------------
+0. Twitter created bootstrap.
+1. Codeply.com  website to practice bootstap and other framework.
+2. In bootstrap we already have css classes we need to just use these classes in our html.
+3. We can use example layout as well.
+4. cdn = content deliviry network . bootstrap is in every cdn thats why it quickly provide respose.
+
+---- ways of installing bootstrap.
+
+-use documentaion.
+1. copy the <link> from boot strap website and add it to <head>.
+2. If you are making website from scratch use starter template.
+3. Download bootstrap and give its url in href.[if internet is not working :) ] but it may have more latency.
+
+
+suggested: 1 or 2
+
+----------------- Wireframing-------
+
+Wireframing: it is the first step of development. to first make design using pencil and paper.
+Mockup: screenshots of what you need. from others layout
+
+Awwwards.com[website] : to see the and inspire from the layout whaich are already made by someone.
+UI Patterns [website] : design patterns and problems we are facing while designing and how other solve that.
+dribble.com : people created design with animation.
+
+Balsamiq cloud[account for 30days]: to do Wireframing. 
+or printout from sneekpeak.com and draw from hand.
+

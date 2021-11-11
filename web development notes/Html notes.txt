@@ -1,0 +1,307 @@
+
+================================== Front-end Web Development =====================
+
+-----------------------------Extension(vs-code)----------------------
+	prettier
+	formulahendry-auto-close-tag
+	shinn.stylelint
+	dbaeumer.vscode-eslint
+	dbaeumer.jshint
+	naumovs.color-highlight
+	DigitalBrainstem,javascript-ejs.support
+
+	file-icons
+	erikphansen-vscode-toggle-column-selection
+	ritwickdey.liveServer
+
+
+
+Interesting learning
+----------------------
+
+1. shortcut for boiler code : type html + enter
+
+	Boiler Code-
+	-----------
+	
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf8">
+			<title></title>
+		</head>
+
+		<body>
+		</body>
+	</html>
+
+2. How internet work? 
+
+
+				server(its like a library)	
+						||				
+===========================================================================
+			Internet backbone
+============================================================================
+	||
+	client
+
+
+|client|== send request =>>|router|== send request =>>|modem|== send request =>>|ISP|== send request =>>|DNS|== locate IP address => browser 
+
+	- client send request(www.Google.com) to router
+	- router send the request to  modem
+	- modem send the request to companies special router [	ISP(Internet Service Provider) ].
+	- ISP send the request to DNS(Domain Name Server)[its like a phone book]
+	- DNS locates and maintain the table of the IP Address 
+	- browser send the ip address to internet backbone.
+	- Server gives the respose.
+
+
+3. How do website actually works?
+
+	Html 		->	Building house structure
+	CSS			->	Painting walls
+	JavaScript 	-> 	functionalities like adding switchings and electricity,water pipelines
+
+4. Internet Archive -> to check how websites look like in old days.
+
+5. Shortcut for emojis
+
+	windows + . 
+	windows + ;
+
+6. <meta name="discription" content=""> = search engine shows the content in description.
+
+7. forms provide various input and types.
+
+8. for hoisting we can use github.
+
+========================================== HTML ==================================================
+
+
+Notes:
+	Hyper text markup language.
+
+	markup -> giving tags to content.
+	HyperText -> a bunch of text that can be link together.
+
+
+-----------------------------------Resources---------------------
+
+		editor[for practice] -> codepen
+
+		resources to learn html 
+		-----------------------
+
+		1. mdn -> morzilla developer network.
+		2. w3school
+		3. devdocs.io
+
+
+---------------------------------tags-------------------
+
+Notes: 
+
+two types of tags-
+
+1. open and close tag 	example <h1></h1>
+2. self closing		example <br>, <hr>
+
+	<hr size="3">
+
+	hr 	=  	html element
+	size 	= 	attribute (modification to the default element)
+
+	
+-----------------------------------------------------------------------------------------
+
+create a folder ------->HTML - Personal Site
+create a file ------->  Index.html (homepage)
+
+
+
+---------------------------------------meta-----------------------------------
+Note:
+
+	
+
+	head -> provides the details about page.
+	meta -> give associated data to document.
+
+	<meta charset="utf8">	=	used for standard encoding
+	<meta name="discription" content=""> = search engine shows the content in description.
+---------------------------------------------------------------------------------------
+
+
+
+-----------------------------How to structure text in html--------
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>Birender Website</title>
+	</head>
+
+	<body>
+		<img src="#" alt="birender profile picture">
+		<h1>Birender</h1>
+		<p><em>Program Analyst Trainee @ <strong><a href="#">Cognizant</a></strong></em></p>
+		<p>I am Azure and web developer.</p>
+		<hr>
+		<h3>Education</h3>
+		<ul>
+			<li>K.V Haldwani</li>
+			<li>K.V ITBP</li>
+		</ul>
+		<h3>My Hobbies</h3>
+		<ol>
+			<li>Watching Movies</li>
+			<li>Development</li>
+		</ol>	
+	</body>
+</html>
+
+---------------------------------em/italic/bold/strong--------------------
+
+Note: 	use <em> instead of <i> 
+	use <strong> instead of <b> 
+	because they give more meaning not only styling.
+
+--------------------------------------hr/br-------------------------	
+	
+	hr -> horizontal rule.
+	br-> break line
+
+---------------------------------------List-------------------------
+	
+	list are of two type
+	<ul> - unorder list
+		<li> - list item
+	<ol> - ordered list
+
+	<img src=""> - self closing element and always required source. 
+	
+	alt => used for telling the about the image if not render and also help google
+		to find if there any searches related to that text.
+	
+	<a href=""> - anchor tag used for linking pages.
+	href is hyperlink refrence.- link destination.
+
+
+================================================= Intermediate HTML ==================
+Interesting facts
+------------------
+
+1. <sup></sup> = superscript, <sub></sub> = subscript.
+2.  HTML Entities : some reserved keywords used 
+	- start with & ends with ; 
+	- use to display reserved keywords normally invalid.
+	- browser interprets them and render the correct character instead.
+
+	1<3 : it means one is smaller than 3 and smaller is reserved keyword but if you just want to use that 
+	symbol in your html page use its entity code [just example may be wrong (&lt;) for (<)]
+
+3. dev.w3.org chart for html entity codes.
+4. name attribute is used to send the data to server. 
+
+	it is just like intializing a variable and providing it value. and sending request to server.
+
+	example  name: <input type="text" name="uname">  
+
+	browser->   name: Har
+	so when we provide name to this box from browser than it will go like (uname=Har)
+
+5. In checkboxes  it have name="" for different options because it can check more than one.   it sends request as [on or off only]
+6. In radio name will be same but value may be differ. 	[it sends text values  as request.]
+7. Dropdown : <Select name="" > <option  value="" >
+
+Radio and dropdown are same but dropdown is good to hide options in page.
+
+
+
+--------------------------------------
+
+<h3>Skills</th3>
+<table>
+	<tr>
+		<td>ios Development</td>
+		<td>⭐⭐⭐⭐⭐</td>
+	<tr>
+		<td>ios Development</td>
+		<td>⭐⭐⭐⭐</td>
+	</tr>
+	<tr>
+		<td>ios Development</td>
+		<td>⭐⭐⭐⭐⭐</td>
+	</tr>
+	
+</table>
+
+------------------------------------------- Table ----------
+
+Note: 	tr = table row
+	td = table data
+	th = table head[by default bold]
+
+
+	thead = table head [for column title name] 
+	tfooter = table footer
+	tbody = table body
+
+	- we use thead/tfooter/tbody to style the data easily at one time.
+	- we can only add atribute to table tag.
+
+	cellspacing : to increse and decrease spacing between cell.
+
+
+Disadvantages : it can be very complex.
+
+so we can use css.
+-------------------------------------------- Html Form-----------
+
+<form>
+	<table>
+		<tr>
+			<td><label>Your Name:</label></td>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td><label>Your Email</label></td>
+			<td><input type="email"></td>
+		</tr>
+		<tr>
+			<td><label>Your Message:</label></td>
+			<td><textarea rows="10" cols="30"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="submit" value="submit"></td>
+		</tr>
+	</table>
+</form>
+
+
+---------------------------------------------------------------
+
+Note: form has
+	-action ="mailto:xyz@gmail.com"
+	-method
+	-input = selfclosing tag and having a lot of type.
+	-label 
+
+	INPUT TYPE
+	--------
+	=> type = text;
+	=> type = submit;
+	=> type = file;
+	=> type = date;
+	=> type = radio;
+	=> type = range;   value="" // for default      min="" max"" // for range  	step="" // increase by
+	=> type = checkbox;
+	
+-------------------------------------------------------------------
+why we use name and value attribute?
+- we will learn this in javascript.
+--------------------------------------------------------------------
