@@ -458,7 +458,14 @@ Notes:-
 
 -- align-self: flex-end;
 
+------------------------------------------------------------------------------------
+-- Difference between justify-content, align-items, align-self, align-content
 
+1. justify-content — controls alignment of all items on the main axis.
+2. align-items — controls alignment of all items on the cross axis.
+3. align-self — controls alignment of an individual flex item on the cross axis.
+4. align-content — described in the spec as for “packing flex lines”; controls space 	between flex lines on the cross axis.
+---------------------------------------------------------------------------------
 --- flex Sizing properties   (increase and shrink)
 ==============================
 
@@ -477,3 +484,38 @@ flex: 1 30px 	// flex-grow | flex-basis
 flex: 1 1 	// flex-grow | flex-shrink
 flex: 1 1 10em  // flex-grow | flex-shrink | flex-basis.
 
+
+=============================================== Responsive Design ===================
+- Resposive design facilitates the user to see the website independant of screen size.
+
+-use flex
+-use media queries.
+
+Media Queries => allow us to modify our styles depending on particular parameters like  screen width or device type.
+
+-- Media Queries
+================
+
+@media(condition){}
+@media(condition2) and (condition2)
+
+conditions:
+	width: px
+	min-width: px
+	max-width: px
+	orientation:landscape
+
+example:- 
+
+ @media(width: 90px){
+ after reaching =90px what changes will happen will be written here.
+ }
+
+min-width: 90px;       90=< changes happen.
+max-width: 90px;      <=90 changes happen.
+
+note => these width are width of viewport[visible part].
+
+How to make stack when we minimise the screen?
+	- add media query
+	- make elements flex direction column.
