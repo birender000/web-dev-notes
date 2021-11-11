@@ -3,198 +3,209 @@
 
 Interesting Learning:-
 ----------------------
-1. we can use custom background color -> Color Hunt[website] and get a hex value.
+	1. we can use custom background color -> Color Hunt[website] and get a hex value.
 
-2. css-colors mdn -> to get color chart.
+	2. css-colors mdn -> to get color chart.
 
-3. there is always a default styling applied by browser. ( css default values)
+	3. there is always a default styling applied by browser. ( css default values)
 
-4. every tag are boxes even <hr> is also.
+	4. every tag are boxes even <hr> is also.
 
-5. Pesticide is a plugin used to see all the boxes in browser.
+	5. Pesticide is a plugin used to see all the boxes in browser.
 
-6. to make css look good in mobile,tab etc we should not give hardcorded values like width: 100px
-	we should give data in percentage. width: 100%
+	6. to make css look good in mobile,tab etc we should not give hardcorded values like width: 100px
+		we should give data in percentage. width: 100%
 
-7. we link sylesheet to the webpage head.
-	<link rel="stylesheet" href=""> 
+	7. we link sylesheet to the webpage head.
+		<link rel="stylesheet" href=""> 
 
-8. folder/file means - in the same level.
-/folder/file  means  root/folder/file.
+	8. folder/file means - in the same level.
+	/folder/file  means  root/folder/file.
 
-9. which one is most prior/important to browser if we style the same tag internally/externally and inline.
-	ans. inline css than internal and last external.
+	9. which one is most prior/important to browser if we style the same tag internally/externally and inline.
+		ans. inline css than internal and last external.
 
-to make choice we can inspect and untick the style we dont required but it will not change the code it just for visualizing locally.
-for changing the code we need to remove the lines.
+		to make choice we can inspect and untick the style we dont required but it will not change the code it just for visualizing locally.
+		for changing the code we need to remove the lines.
 
-suggested :- always style your css in external sheet.
+		suggested :- always style your css in external sheet.
 
-10. best practice is to write all your property in tag in alphabetically.
+	10. best practice is to write all your property in tag in alphabetically.
 
-11. Emojipedia - for source of image for different emojis. 
+	11. Emojipedia - for source of image for different emojis. 
 
-12. we can add two classes to the same element 
-	example: <img class="broccoli circular" src="#">
-	
-	In css file:  	.broccoli()
-			.circcular()
-	
-	but it is not applicable in id.
+	12. we can add two classes to the same element 
+		example: <img class="broccoli circular" src="#">
 
-13. sudo classes like :hover, :active etc.
+		In css file:  	.broccoli()
+				.circcular()
+
+		but it is not applicable in id.
+
+	13. sudo classes like :hover, :active etc.
 
 --------------------------------------------------------
 Notes: 
 
-=> we can get css by 3 ways.
+	=> we can get css by 3 ways.
 
-- Inline
-- header section.
-- External
+		- Inline
+		- header section.
+		- External
 
+	1.Inline:-
 
+		<body style="background-color: blue;">
 
-1.Inline:-
-
-	<body style="background-color: blue;">
-
-disavantages : its very difficult to go and change styling in every tag if required.
+		disavantages : its very difficult to go and change styling in every tag if required.
 
 
-2. Head Section:-
+	2. Head Section:-
 
-<head>
-	<style>
-		body{
-			background-color: blue;
-			
-		}
-	</style>
-</head>
+		<head>
+			<style>
+				body{
+					background-color: blue;
 
-disadvantage : it is difficult to change all the styling in more than >500 web pages individually.
+				}
+			</style>
+		</head>
 
-
-3. External :-	
-
-<head>
-	<link rel="stylesheet" href="style.css">
-</head>
+		disadvantage : it is difficult to change all the styling in more than >500 web pages individually.
 
 
---- how to debug the css.
+	3. External :-	
 
-Approach 1: line by line debugging.
-Approach 2: Crome Developer Tool.
+		<head>
+			<link rel="stylesheet" href="style.css">
+		</head>
 
-inspect or chrome -> View -> developer ->developer tools. 
+---------------------------------------------------------------------------------------------------------------------
+	--- how to debug the css.
 
-console will show error.
+		Approach 1: line by line debugging.
+		Approach 2: Crome Developer Tool.
 
---- the grammar of css syntax.
+		inspect or chrome -> View -> developer ->developer tools. 
 
-	selector{property : value;}
+		console will show error.
 
---- css selector
+	--- the grammar of css syntax.
 
-	To group the elements and style them.
+		selector{property : value;}
 
-	- if you use tag name it will be applied to all the elements having same tag.
-	- but for specific elements there are two different method  of selection
-		class (.tag)
-		id	(#tag)
+	--- css selector
 
-	class = for styling one and more elements having same requirement.
-	id = id is unique for every element we can use it to style elements uniquely.
+		To group the elements and style them.
 
----sudo classes - having : in front example= :hover used to change the state.
-	
-	 how to use? 
+		- if you use tag name it will be applied to all the elements having same tag.
+		- but for specific elements there are two different method  of selection
+			class (.tag)
+			id	(#tag)
+
+		class = for styling one and more elements having same requirement.
+		id = id is unique for every element we can use it to style elements uniquely.
+
+	---sudo classes - having : in front example= :hover used to change the state.
+
+		how to use? 
 		img:hover{}
 
---- uppercase /lower case
+	--- uppercase /lower case
+		
+		text-transform: uppercase;
 
-text-transform: uppercase;
+	--- letter-spacing = for spaceing between letters.
+		
+		letter-spacing: 20px;
 
---- letter-spacing = for spaceing between letters.
-letter-spacing: 20px;
+	--for underline
 
---for underline
+		text-decoration: (wavy) (color) underline
 
-text-decoration: (wavy) (color) underline
-
-type color underline.
-
-
---------------------------------------------------------------------
-
-we have to make this-> 	...
-
-...........
-.	  .	// background-color: white; border-style: dotted; height: 1px;
-...........
-
-hr{
-	border-color: grey;
-	border-style: dotted none none; 		// none for left/right and bottom.
-	// or border-style: none; border-top-style: dotted;
-	height: 0px;
-	width: 5%;
-	border-width: 5px;
-}
+		type | color | underline.
 
 
-h1, h3{
-	color: green;
-}
+	--------------------------------------------------------------------
+
+	we have to make this-> 	...
+
+	...........
+	.	  .	// background-color: white; border-style: dotted; height: 1px;
+	...........
+
+	hr{
+		border-color: grey;
+		border-style: dotted none none; 		// none for left/right and bottom.
+		// or border-style: none; border-top-style: dotted;
+		height: 0px;
+		width: 5%;
+		border-width: 5px;
+	}
+
+
+	h1, h3{
+		color: green;
+	}
 
 =================================================== Intermediate CSS =============================
 
 Interesting learning
 ---------------------
 
-1. Favicon = favorite icon (showup in browser upside where title is shown)
+	1. Favicon = favorite icon (showup in browser upside where title is shown)
 
-favicon.cc to  create a favicon.
+		favicon.cc to  create a favicon.
 
-2. viewport is screen we are watching[mobile/pc/tablets].
-3. padding, border increases the size.
-4. padding applied the content not images like background image.
-5. margin give space outside the element.
-6. we can make an element hidden by two ways.
-	- display: none;
-	- visibility: hidden;
-7. relative = changes relative to its old position.
-	absolute = changes relative to parent[if there is no parent than body is parent].
-8. two types of font style.
-	San-Serif - having no style in corner.
-	Serif	- having stye in corner.
-	monospace - easy to read.
-
-9. CSS font stack = To download the fallback of fonts [if our font is not avaiable in other os then other font will be used].
-	ex- font-family: verdana, sans-serif;
-
-10. if you want to make sure that people will se you font style use = font embedding.
-	Google font [free and can be embed easily]
-
-	how to embed 
-	- provide link in header section similar to sylesheet.
-
-11. loren ipsum dolor is used as a demo content so that you can create pages for content similar to that.
-12. Flaticon.com for icons.
-13. Giphy.com for better gif.
-14. 16px = 100% = 1em.[percentage/em is used to make font dynamic.]
-15. if they both are having static font size then it will take child size.
-	if font size are dynamic for parent and child then it will first take size of parent and then on top of it child font size.
+	2. viewport is screen we are watching[mobile/pc/tablets].
 	
-	to solve this problem we have rem(root em).
-	it will change the size on the top of parent size.
+	3. padding, border increases the size.
+	
+	4. padding applied the content not images like background image.
+	
+	5. margin give space outside the element.
+	
+	6. we can make an element hidden by two ways.
+		- display: none;
+		- visibility: hidden;
+		
+	7. relative = changes relative to its old position.
+		absolute = changes relative to parent[if there is no parent than body is parent].
+		
+	8. two types of font style.
+		San-Serif - having no style in corner.
+		Serif	- having stye in corner.
+		monospace - easy to read.
 
-suggested : rem
+	9. CSS font stack = To download the fallback of fonts [if our font is not avaiable in other os then other font will be used].
+		ex- font-family: verdana, sans-serif;
 
-16. line-height: spacing between text.
-17. frontendmentor.io for learning and practicing frontend.
+	10. if you want to make sure that people will se you font style use = font embedding.
+		Google font [free and can be embed easily]
+
+		how to embed 
+		- provide link in header section similar to sylesheet.
+
+	11. loren ipsum dolor is used as a demo content so that you can create pages for content similar to that.
+	
+	12. Flaticon.com for icons.
+	
+	13. Giphy.com for better gif.
+	
+	14. There are two types of measuring units
+		-dynamic : em,rem,% etc
+		-static : px;
+		
+	16px = 100% = 1em.[percentage/em is used to make font dynamic.]
+		-- percentage is dependant on parent and sometimes itself.
+		-- 1em is equal to parent element. but it create a problem if the element is nested with same element so it takes itself parent and adjust itself accordingly. 
+			<h1>
+				<p><h1></h1><p>       // if we apply em in h1 then nested h1 will be smaller than parent.
+			</h1>
+		-- 1rem[root em] is solution of 1em problem it take root as parent and then adjust accordingly.
+	
+	16. line-height: spacing between text.
+	17. frontendmentor.io for learning and practicing frontend.
 
 
 
@@ -203,142 +214,266 @@ suggested : rem
 --------------------------------------------------------------------------------------------
 Notes:- 
 
-div = content division element allows you to divide your content in several boxes.
+	-- div = content division element allows you to divide your content in several boxes.
 
----css box model----
-1. margin
-2. border
-3. padding
-4. content
+	---css box model----
+		1. margin
+		2. border
+		3. padding
+		4. content
 
---- Display --------
-1. Block  			=> width = 100%  
-
-	[pro: we can change the width 
-	con: every element comes in another line.]
-
-2. inline 			=> width can't be change the width
+	--- Display --------
 	
-	[pro: we can get the other element in same line 
-	con: we can't change the  width]
+		1. Block  			=> width = 100%  
 
-3. inline-Block 	=> it will make the element in inline and are in block 
-	[pro: we can get the element in inline and can change the width]
+			[pro: we can change the width 
+			con: every element comes in another line.]
 
-4. none  => it removes or hide the element.
+		2. inline 			=> width can't be change the width
 
-Common block element
---------------------
-1. Paragraph 	<p>   
-2. header 		<h1>...<h6>
-3. division 	<div>
-4. list 		<ol>, <ul>, <li>
-5. forms 		<form>
+			[pro: we can get the other element in same line 
+			con: we can't change the  width]
 
-common inline Display element
------------------------
-1. span 	<span>
-2. image 	<img>
-3. anchor	<a>
+		3. inline-Block 	=> it will make the element in inline and are in block 
+			[pro: we can get the element in inline and can change the width]
 
--- CSS Positioning
-Rules
-1. Content is everything.  = it will determine the height ,width .
+		4. none  => it removes or hide the element.
+		
 
+	-- Common block element
+	--------------------
+		1. Paragraph 	<p>   
+		2. header 		<h1>...<h6>
+		3. division 	<div>
+		4. list 		<ol>, <ul>, <li>
+		5. forms 		<form>
 
-2. Order Comes from Code.	=  whatever you code the same order will be followed like
-								<img><h1> will show you image first than heading.
+	-- common inline Display element
+	-----------------------
+		1. span 	<span>
+		2. image 	<img>
+		3. anchor	<a>
 
-- cascade means order and it matters in styling.
 	
-	ex:
-
-	h1{ background-color: yellow}
-	h1{ background-color: purple}
-
-	so background-color will be purple.
-
-	* more specific will win
-
-	section h1{
-		background-color: black;
-	}
-	so background-color will be black.
-
-	specific
-	---------
-	id> class> elements
+	-- CSS Positioning
+	
+	Rules
+	=====
+		1. Content is everything.  = it will determine the height ,width .
 
 
-3. Chidren Sit on Parents = <div> <h1> <span>
-							element on screen.
+		2. Order Comes from Code.	=  whatever you code the same order will be followed like
+										<img><h1> will show you image first than heading.
 
--- Position 
+		- cascade means order and it matters in styling.
 
-1. Static			: Default html
-2. Relative			: change in natural postition using top/bottom/left/right.
-						- it doesn't effect layout other elements position in screen.
-						- if we shift the element outside the screen it will disapper 
-							because it is relative to its old position.
-3. Absolute			:  	- if we shift the element to outside the screen it came from other side
-							because it is relative to parent.
-						- it affects the positioning of other elements.
-4. Fixed			:  the position of element is fixed in  screen for example: navbar.
+			ex:
 
+			h1{ background-color: yellow}
+			h1{ background-color: purple}
 
--- text align: center 
-when we do text align center the content of element move to center.
-it is applicable if all content having same width.
+			so background-color will be purple.
 
-case : if width are different than we can change the margin.
--- margin: auto  = is used to make the content in center.
+			* more specific will win
 
+			section h1{
+				background-color: black;
+			}
+			so background-color will be black.
 
-// font properties
-
-font-family = for different font styles.
-font-size
-
--- float and clears
-
-float : suggested to use only for wrapping text around an element.
-do not use it unnecessarily because it has many corner cases. [values: left/right/top/bottom]
-
-clear : it is used for unwrapping text. [values: left/right/top/bottom]
-
-Selectors
-=========
-
-1. class		(.)
-2. id			(#)
-3. element		( h1{} )
-4. everything   (*)
-5. selector list   ( h1,h2,h3{} )
-6. Descendent selector   ( li a{} )  = for all <a> nested  inside li
-7. Adjacent & Direct-Descendent selectors  
-
-- (h1 + p{}) = Paragraph immideatly preceeding by h1
-- ( div > li {} ) = li's that are direct child of div
-
-input[type="text"]:nth-of-type(2n){
-	for every second text input.
-}
-
-8. Attribute selector ( input[type=""]{} )
-
-attribute*=   starting with
-attribute$=    ending with
-attribute~=    contains 
+			specific
+			---------
+			inline> id> class> elements
 
 
-9. Pseudo element = keyword added to selector that lets you style a particular part  of selected elements.
-- ::after
-- ::before
-- ::first-letter
-- ::first-line
-- ::selection  =  p::selection{ background-color: yellow;} if we select paragraph the selection color will be yellow.
+		3. Chidren Sit on Parents = <div> <h1> <span>
+								element on screen.
 
-example: we can use them to increse font size of first letter of  h1.
+	-- Position 
+
+		1. Static			: Default html
+		2. Relative			: change in natural postition using top/bottom/left/right.
+								- it doesn't effect layout other elements position in screen.
+								- if we shift the element outside the screen it will disapper 
+									because it is relative to its old position.
+		3. Absolute			:  	- if we shift the element to outside the screen it came from other side
+									because it is relative to parent.
+								- it affects the positioning of other elements.
+		4. Fixed			:  the position of element is fixed in  screen for example: navbar.
 
 
+	-- text align: center 
+		when we do text align center the content of element move to center.
+		it is applicable if all content having same width.
+
+		
+	-- case : if width are different than we can change the margin.
+		 margin: auto  = is used to make the content in center.
+
+
+	// font properties
+
+		font-family = for different font styles.
+		font-size:
+
+	-- float and clears
+
+		float : suggested to use only for wrapping text around an element.
+		do not use it unnecessarily because it has many corner cases. [values: left/right/top/bottom]
+
+		clear : it is used for unwrapping text. [values: left/right/top/bottom]
+
+	Selectors
+	=========
+
+		1. class		(.)
+		2. id			(#)
+		3. element		( h1{} )
+		4. everything   (*)
+		5. selector list   ( h1,h2,h3{} )
+		6. Descendent selector   ( li a{} )  = for all <a> nested  inside li
+		7. Adjacent & Direct-Descendent selectors  
+
+			- (h1 + p{}) = Paragraph immideatly preceeding by h1
+			- ( div > li {} ) = li's that are direct child of div
+
+			input[type="text"]:nth-of-type(2n){
+				for every second text input.
+			}
+
+		8. Attribute selector ( input[type=""]{} )
+
+			attribute*=   starting with
+			attribute$=    ending with
+			attribute~=    contains 
+
+
+		9. Pseudo element = keyword added to selector that lets you style a particular part  of selected elements.
+			- ::after
+			- ::before
+			- ::first-letter
+			- ::first-line
+			- ::selection  =  p::selection{ background-color: yellow;} if we select paragraph the selection color will be yellow.
+
+		example: we can use them to increse font size of first letter of  h1.
+
+
+	-- Opacity & Aplpha Channel
+	=============================
+	
+		- range not transparent (0)  to  full transparent (1).
+		
+		- Opacity : it is property which makes the elements and its child elements transparent.
+		- Alpha channel : It depend on alpha value and do not make child elements transparent.
+					= rgba(red,green,blue,aplha)
+					= and last 2 digits of hexacolor define transparency.
+	-- Transition property
+	=======================
+		-change in state with time.
+			transition: property | duration | timing function| delay
+			
+		transition-timing-function: linear [in a line] / ease-in [first slow then fast] / steps(2, end) [in  2 steps] /etc
+	
+	-- Transform property
+	========================
+		- change in shape and size.
+		transform: rotate(20deg) [for rotation], scale(x,y) [to change the size of element], translateX(px)[to move thing horizontally], 
+				translateY(px) [to move thing vertically].
+		
+		- we can also change transform origin
+		transform-origin: center; 
+		
+	-- Box shadow
+	================================
+	
+	box-shadow: offset left | offset right | blur radius | spread radius | color.
+	
+	-- calc
+	==========================
+	example =>  margin: clac(10%/6);
+	
+	
+	
+================================ Resposive CSS and Flexbox===========================
+
+ 	- Flexbox is a one-dimensional layout method for laying out items in rows or columns
+ 	- It helps to distribute space dynamically acress elements of an unknown size. hence the term flex.
+
+	- property dependant on parent.
+
+
+ -- Flex properties
+ =================
+ 
+ 	- The Flex Model
+				 |		Main Axis
+	<------------------------|------------------------>
+ 				 |
+				 |
+				 |
+		cross axis	 |
+ 
+ 
+ 
+ -- display: flex;     // by default: left to right.
+ 
+ -- flex-direction: 
+ 	: row  // to make flex in row 
+	: row reverse // to make flex row reverse
+ 	: column
+	: column-reverse.
+ 			
+ -- justify-content			=> by default: main-axis
+ 	: flex-start; // start from left
+	: flex-end; // end in right
+	: center;
+	: space-between // distribute space between elements
+	: space-around // distribute space in left and right
+	: space-evenly // to distribute space evenly in between and in left and right.
+	
+ -- flex-wrap
+ 	: wrap; // the child elements move to another column/row if there is no space.
+	: wrap-reverse; // reverse of above.
+ 	: nowrap; // no wrapping
+	
+			flex-direction-->
+			row:			column:
+			
+	  main-axis :  	left to right		top to bottom
+	  cross-axis : 	top to bottom		left to right
+	  
+ -- align-items: flex-start;		=> by default: cross-axis
+	: flex-end; // end in bottom
+	: center;
+	: baseline // if there is any value then the content will be above the base line if you line in the end of element.
+	
+-- align-content: 
+	flex-start;		=> by default: cross-axis
+	: flex-end; // end in bottom
+	: center;
+	: baseline // if there is any value then the content will be above the base line if you line in the end of element.
+	: space-between // distribute space between elements
+	: space-around // distribute space in left and right
+	: space-evenly // to distribute space evenly in between and in left and right.
+
+-- align-self: flex-end;
+
+
+--- flex Sizing properties   (increase and shrink)
+==============================
+
+flex-basis: px // along the main-axis.
+flex-grow:  1/2/3... // if there is additional space 
+		to prevent them to grow more set max-width: px or min-width: px
+flex-shrink: 1/2/3... // shrink according to other divs.
+
+
+Flex shorthand property
+================================
+
+flex: 2     //flex grow
+flex: 10em	// flex basis
+flex: 1 30px 	// flex-grow | flex-basis
+flex: 1 1 	// flex-grow | flex-shrink
+flex: 1 1 10em  // flex-grow | flex-shrink | flex-basis.
 
