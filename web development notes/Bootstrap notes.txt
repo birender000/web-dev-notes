@@ -63,6 +63,51 @@ Nice to have: icons , forms, buttons , typography and utilities.
    =============================
    
       - badges are like what we see in notification buttons with numbers. it is given in <span>.
+      
+      
+  ======= Grid System ====================================
+  
+  - it helps to make custom layout.
+  - it requires class="container" 
+  - the total size of layout is always 12 unit. you can set your breakpoints accordingly.
+  
+  - for adding row use class="row".
+  - for column class="col-size[in unit]"         total size should be 12 units in   a  single row.
+   - class="col" it will do even division of row automatically.
+   - if we fix col size the column will never stack when the page is stacked 
+      to make it stacked at any breakpoint =>  class: "col-md-4"; so at 4 or grater than 4 it will take 4units and after that it stacked.
+      
+      we can set it for :  sm, xl ,l ,md
+      
+      Useful grid utilites.
+      =======================
+      justify-content
+      align-items : to align items in side div. not div
+      
+      Bootstrap & Forms
+      =================
+      class="form-group"  // to create forms
+      class="from-control"; // to make layout look better.
+      
+      customize radio/checkox.
+      
+       Bootstrap & Navbar
+      ===================
+      class="navbar".
+      navbar : when small screen size :they turn into a stack and hidden.
+      
+      class="collapse" // to hide div.
+      
+      navbar-toggler
+      
+      we can make nav bar sticky.
+      
+       Bootstrap & Icons
+      =================
+      there are lot more icons 
+      but we can use font awesome[but require email address.]
+   
+  
 
 
 
