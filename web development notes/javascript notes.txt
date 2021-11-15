@@ -1,1 +1,19 @@
 ======================================= javascript ===============================
+1.  ECMAScript is other name of javascript.
+
+2. java and javascript both are different
+    java is compiled based language whereas javascript is interpreted language.
+    
+3. javascript is supported by every browser.
+
+4. its a script like we see in movies every element have some line to follow that's why it is known as javascript
+
+5. where we can write javascript without ide.
+
+  chrome developer :- in console we can write code line by line but every time we need to click shift+enter then it will go in next line and run every line one by one
+                      there is problem suppose if we don not click shift+ enter  then we will loose our code.
+                      
+                      other method is  in developer on left corner >> go to snippets -> new snippets
+ 
+  
+
