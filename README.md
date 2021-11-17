@@ -1,6 +1,8 @@
 # web-dev-notes
 
-========= My site project =========
+
+My site project
+==================
 
 - learn and understand the concept of html tags and some css properties.
 
@@ -17,7 +19,7 @@ css properties
 ===============
 - float
 - alignment 
-- positioning
+- positioning (static, absolute, relative, fixed)
 - margin
 - padding
 - border radius
