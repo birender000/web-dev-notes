@@ -519,3 +519,17 @@ note => these width are width of viewport[visible part].
 How to make stack when we minimise the screen?
 	- add media query
 	- make elements flex direction column.
+
+
+
+Z-indexing and Stacking
+========================
+
+it is property used to do one div stack to another and it affects the stacking order
+	first way is to make them nested 
+	second way is to make postition absolute for other div.
+	
+note: it only work if element have position property.
+
+Z-index: 1
+ make the div first or closer to user
