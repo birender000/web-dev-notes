@@ -15,5 +15,28 @@
                       
                       other method is  in developer on left corner >> go to snippets -> new snippets
  
+ > Javascript is synchronous and single threaded language. every line of code executed one by one and one after another.
+ 
+ HOW JAVA SCRIPT WORK
+ ====================
+ 
+ > there is a term called Execution context. which is created when code go for interpretions.
+ > it comprises of two things 
+        a> memory creation
+        b> code execution
+ > in memory creation phase variables and functions got memory.
+ > in code execution phase lines of codes or threads are executed one by one.
+ 
+ > if there are multiple functions in code or function inside function [like reccursion]
+ then an call stack is created with execution context at the end and will pop at the end of execution of code.
+ 
+ HOISTING IN JAVASCRIPT
+ ======================
+ > it is phenomenon by which we can access variable or function without any problem or error.
+ > when the memory is allocated to variable then it is assigned as undefined but if there is no variable declared then it is called not defined.
+ 
+ 
+
+    
   
 
