@@ -17,6 +17,19 @@
  
  > Javascript is synchronous and single threaded language. every line of code executed one by one and one after another.
  
+ 
+ > Javascript can be used for changing:    
+    1. text content  [ document.getElementById('').innerHtml = "ajsdn" ]
+    2. using attributes [ document.getElementById('').src = "cool.jpeg" ]
+    3. style [document.getElementById('').style.display="none"]
+    
+ > where to
+ ===========
+ using <script> tag
+  1. head : <script src="">
+  2. body : <script>
+    
+ 
  HOW JAVA SCRIPT WORK
  ====================
  
