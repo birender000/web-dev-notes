@@ -30,14 +30,58 @@
   2. body : <script>
     
  
- HOW JAVA SCRIPT WORK
+ 
+ 
+ ========================================================================= Namaste javascript ====================================================================
+
+HOW JAVA SCRIPT WORK
  ====================
  
- > there is a term called Execution context. which is created when code go for interpretions.
+ > there is a term called global Execution context. which is created when code go for interpretions.
  > it comprises of two things 
         a> memory creation
         b> code execution
- > in memory creation phase variables and functions got memory.
+ > in memory creation phase variables and functions got memory who are declared.
+    example 
+    
+        var x = 10;
+        a();
+        second = b();
+        
+        function a(){
+           var x = 20;
+        }
+        
+        function b(){
+            var x = 20
+        }
+        
+                        Global Execution Context
+        
+        Memory                                          Code Execution
+        =================================================================
+        x = undefined                                   x = 10
+        a = function{ copy of whole function}           Execution context for a()
+        second: undefined                               Execution context for b()
+        
+        
+        call stack
+        ==========
+        
+        stage 1.    GEC  [Global Execution context]
+        
+        stage 2.    a()
+                    GEC
+        
+        after execution a() will be vanished
+        
+        stage 3.    b()
+                    GEC
+        after execution b() will be vanished
+        
+        after execution GEC will be vanished
+                    
+   
  > in code execution phase lines of codes or threads are executed one by one.
  
  > if there are multiple functions in code or function inside function [like reccursion]
@@ -45,10 +89,58 @@
  
  HOISTING IN JAVASCRIPT
  ======================
- > it is phenomenon by which we can access variable or function without any problem or error.
- > when the memory is allocated to variable then it is assigned as undefined but if there is no variable declared then it is called not defined.
+ > it is default behaviour of javascript to use the variables or call the functions before they are declared.
+ > it is because the first phase is memory allocation in which meomory allocated to variables and functions which are declared.
+
+Shortest js program [when file is empty]
+===================
+
+javascript engine automatically created object and global execution context even if there is no code of line.
+
+Q. what is window?
+    window is an  object created with global execution context automatically.
+    
+Q. what is this?
+    this === window [in global execution context]
+    
+    this refers to the object of execution context.
+    
+ Q. what is global space?
+    code line which is not inside any function is in global space.
+    
+ > if we write anything after window js engine will try to  find that  function  or variable in global space.
  
+    example 1.>   var x = 10
+                  window.x will give 10 
+                  or 
+                  x will also give 10 
+                  or 
+                  this.a will also give 10
+                
+    example 2.>  windows.alert() 
+                 we can also write is alert()
+                 
+              
+ Defined vs undefined
+ ====================
  
+  > when the memory is allocated to variable then it is assigned as undefined but if there is no variable declared then it is called not defined and show error if u use it.
+ 
+Q. what is undefined?
+    when memory is allocated to declared variable but no value is assigned. it is kind of placeholder.
+   
+Q. what is not defined?
+    when variable is not declared.
+    
+ 
+Q. javascript is a loosly/weakly type language. why?
+    because it is not very specific about its datatypes.
+    ex. var = "kdsfk"
+        var = 10
+        var = 10.45
+
+> never do  a = undefined. why?
+   its not a good practice.
 
     
   
