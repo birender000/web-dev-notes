@@ -142,6 +142,52 @@ Q. javascript is a loosly/weakly type language. why?
 > never do  a = undefined. why?
    its not a good practice.
 
+
+THE SCOPE CHAIN
+==================
+
+> what is scope?
+    scope is kind of accessebility for example scope for a varible is where it can be accessed.
+
+> What is lexical environment?
+    lexical means heirarchy. is created when execution context is created.
+    lexical environment comprises of [local memory  along with lexical environment] of parent.
+
+> lexical environment of global execution context is null.
     
-  
+    
+    Memory                          code execution
+    ================================================
+    >some env. variables         some code of lines
+    >lexical environment
+        having local memory 
+        along with 
+        lexical env. of parent
+        
+  Q. what is scope chain?
+        when there are more than one execution context and are lexical than an scope chain is created.
+        
+        in this example scope chain created is    =      gec - a() - b()
+        
+        for example.
+        
+            var a=10;
+            a();
+            console.log(b);                 // not defined
+            
+            function a(){
+                var b = 20 ;
+                b();
+                function b(){
+                    console.log(a);          //  10
+                }
+            }
+            
+        
+        
+        
+        
+      
+    
+
 
