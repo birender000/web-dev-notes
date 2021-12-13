@@ -34,8 +34,9 @@
  
  ========================================================================= Namaste javascript ====================================================================
 
+======================
 HOW JAVA SCRIPT WORK
- ====================
+=====================
  
  > there is a term called global Execution context. which is created when code go for interpretions.
  > it comprises of two things 
@@ -86,16 +87,18 @@ HOW JAVA SCRIPT WORK
  
  > if there are multiple functions in code or function inside function [like reccursion]
  then an call stack is created with execution context at the end and will pop at the end of execution of code.
- 
+
+=======================
  HOISTING IN JAVASCRIPT
- ======================
+=======================
+
  > it is default behaviour of javascript to use the variables or call the functions before they are declared. [it is related to declaration not with intialization]
  > it is because the first phase is memory allocation in which meomory allocated to variables and functions which are declared.
- > 
  
-
+ 
+==========================================
 Shortest js program [when file is empty]
-===================
+===========================================
 
 javascript engine automatically created object and global execution context even if there is no code of line.
 
@@ -122,9 +125,9 @@ Q. what is this?
     example 2.>  windows.alert() 
                  we can also write is alert()
                  
-              
+=======================            
  Defined vs undefined
- ====================
+======================
  
   > when the memory is allocated to variable then it is assigned as undefined but if there is no variable declared then it is called not defined and show error if u use it.
  
@@ -144,7 +147,7 @@ Q. javascript is a loosly/weakly type language. why?
 > never do  a = undefined. why?
    its not a good practice.
 
-
+==================
 THE SCOPE CHAIN
 ==================
 
@@ -185,7 +188,8 @@ THE SCOPE CHAIN
                 }
             }
     
-   
+  
+  ======================================
   Let / const and temporal dead zone
   ======================================
   
@@ -208,7 +212,40 @@ THE SCOPE CHAIN
     suggestion>  use let and const.  
                     always declare and intialize  let/const at top otherwise there will be lots of error.
  
+=============
+BLOCK SCOPE
+==============
  
+ {
+    // it is known as block scope.
+ }
+ 
+ > block scope is used when we need to group multiple statement where syntax required only single statements.
+     
+     for example: 
+ 
+        if(condition)
+            print()    // if required only one statement
+        
+        // but if we required more than one statements than we use block scope.
+        
+       
+ > the let/const inside block scope get memory in block not is global or script.
+ 
+ for example: 
+ 
+    let a=10;
+    {
+        var a=20;       // wrong because a is already there in global scope
+        let a=20;       // right because it will be created in local block memory  and is also called shadowing
+    }
+    
+  
+  > shadowing : it means again declaring and assigning value to variable which is already present shown in above example which gives output right.
+  > illegal shadowing: we can only shadow which is in his block.  example given above which output wrong.
+  
+  
+  
                     
    
         
