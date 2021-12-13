@@ -89,8 +89,10 @@ HOW JAVA SCRIPT WORK
  
  HOISTING IN JAVASCRIPT
  ======================
- > it is default behaviour of javascript to use the variables or call the functions before they are declared.
+ > it is default behaviour of javascript to use the variables or call the functions before they are declared. [it is related to declaration not with intialization]
  > it is because the first phase is memory allocation in which meomory allocated to variables and functions which are declared.
+ > 
+ 
 
 Shortest js program [when file is empty]
 ===================
@@ -182,10 +184,33 @@ THE SCOPE CHAIN
                     console.log(a);          //  10
                 }
             }
-            
+    
+   
+  Let / const and temporal dead zone
+  ======================================
+  
+> what is temporal dead zone?
+    the time duration between memory allocation and assignment of a let and const is called temporal dead zone.
+    
+    let and const are allocated memory in different memory space called script. but we can access them when they 
+    are intialized.
+    
+ > difference between let and const and var
+ 
+    flexible                                strict                              more strict
+    var                                     let                                      const 
+    =============================================================================================
+    can be declared more                    declared only once                  declared and assigned only once
+    than one time.                          in a block.                          in a block.
+
         
         
-        
+    suggestion>  use let and const.  
+                    always declare and intialize  let/const at top otherwise there will be lots of error.
+ 
+ 
+                    
+   
         
       
     
