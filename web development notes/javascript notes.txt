@@ -245,7 +245,27 @@ BLOCK SCOPE
   > illegal shadowing: we can only shadow which is in his block.  example given above which output wrong.
   
   
+  =================
+  CLOSURE
+  =================
   
+  Closure => function along with lexical environment.
+  
+  ex. function x(){
+        var a=7;
+        function y(){                       // we can write return function here 
+            console.log(a);
+            }
+           return y;
+        }
+        var z=x();
+        console.log(z);     // function y(..)
+        z();                // 7 
+        
+        
+        so in above example 
+        closure (x):
+        
                     
    
         
